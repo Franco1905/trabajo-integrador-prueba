@@ -36,5 +36,5 @@ def termSec (reader,NIVEL_ED_INDEX,CH06_INDEX,PONDERA_INDEX):
 
     for line in reader:
         if cumple(line,NIVEL_ED_INDEX,CH06_INDEX):
-            cantSecCom += 1
+            cantSecCom += int(line[PONDERA_INDEX])
     return(cantSecCom)
